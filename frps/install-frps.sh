@@ -8,14 +8,14 @@ export PATH
 #   Intro:  http://koolshare.cn/forum-72-1.html
 #===============================================================================================
 program_name="frps"
-version="1.4"
+version="1.5"
 str_program_dir="/usr/local/${program_name}"
-program_download_url="https://code.aliyun.com/clangcn/frp/raw/master"
-program_version="0.9.3"
+program_download_url="https://github.com/fatedier/frp/releases/download"
+program_version="0.11.0"
 program_init="/etc/init.d/${program_name}"
 program_config_file="frps.ini"
-program_init_download_url=https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/frps.init
-str_install_shell=https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/install-frps.sh
+program_init_download_url=https://raw.githubusercontent.com/myeveryheart/onekey-install-shell/master/frps/frps.init
+str_install_shell=https://raw.githubusercontent.com/myeveryheart/onekey-install-shell/master/frps/install-frps.sh
 shell_update(){
     fun_clangcn "clear"
     echo "Check updates for shell..."
@@ -169,7 +169,7 @@ fun_randstr(){
 fun_getVer(){
     echo -e "Loading network version for ${program_name}, please wait..."
     program_latest_filename="frp_${program_version}_linux_${ARCHS}.tar.gz"
-    program_latest_file_url="${program_download_url}/${program_version}/${program_latest_filename}"
+    program_latest_file_url="${program_download_url}/v${program_version}/${program_latest_filename}"
     if [ -z "${program_latest_filename}" ]; then
         echo -e "${COLOR_RED}Load network version failed!!!${COLOR_END}"
     else
