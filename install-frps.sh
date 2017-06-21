@@ -14,8 +14,8 @@ program_download_url="https://github.com/fatedier/frp/releases/download"
 program_version="0.11.0"
 program_init="/etc/init.d/${program_name}"
 program_config_file="frps.ini"
-program_init_download_url=https://raw.githubusercontent.com/myeveryheart/onekey-install-shell/master/frps/frps.init
-str_install_shell=https://raw.githubusercontent.com/myeveryheart/onekey-install-shell/master/frps/install-frps.sh
+program_init_download_url=https://raw.githubusercontent.com/myeveryheart/frps-install-shell/master/frps.init
+str_install_shell=https://raw.githubusercontent.com/myeveryheart/frps-install-shell/master/install-frps.sh
 shell_update(){
     fun_clangcn "clear"
     echo "Check updates for shell..."
